@@ -29,8 +29,8 @@ alias be='bundle exec'
 alias v.='mvim .'
 
 alias ducks='du -cms * | sort -rn | head'
-alias ltunnel='sudo ssh -L 80:localhost:3000 brad@localhost'
-alias gwen='ssh brad@gwen'
+#alias ltunnel='sudo ssh -L 80:localhost:3000 brad@localhost'
+#alias gwen='ssh brad@gwen'
 
 function take() {
   mkdir -p $1

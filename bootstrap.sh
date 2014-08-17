@@ -27,7 +27,7 @@ source ${THIS_DIR}/setup_gitconfig.sh
 #.vimrc
 for i in .bashrc .bash_login .vimrc
 do
-  output=$(ln -s ${THIS_DIR}/${i} ${HOME}/.bashrc 2>&1)
+  output=$(ln -s ${THIS_DIR}/${i} ${HOME}/${i} 2>&1)
   if [[ $? -eq 0 ]]
   then
     echo -e "${GREEN}Linked ${i}${NO_COLOR}"
@@ -37,7 +37,7 @@ do
 done
 
 #.vim/
-mkdir -f ${HOME}/.vim # don't care if it already exists
+mkdir  ${HOME}/.vim # don't care if it already exists
 
 #vim-pathogen
 mkdir -p ${HOME}/.vim/{autoload,bundle} && \
