@@ -13,5 +13,6 @@ pushd "${HOME}/Code/personal/dotfiles" 1> /dev/null
   popd 1> /dev/null
 
 source ~/.bash_login.local
-
+export GEM_EDITOR='subl'
+export BUNDLER_EDITOR='subl'
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
